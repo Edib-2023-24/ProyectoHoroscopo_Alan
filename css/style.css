@@ -17,3 +17,79 @@
 /* Colores */
 
 /* ******************************** */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  background-image: url(../svg/fondo.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas:
+    "header header header header header header header header header header header header header header header header"
+    "horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo horoscopo";
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.horoscopo {
+  grid-area: horoscopo;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cabra {
+  grid-column: 3 / 6;
+  grid-row: 2;
+  width: 100%;
+}
+
+.jabali {
+  grid-column: 12 / 14;
+  grid-row: 1;
+  width: 100%;
+}
+
+.serpiente {
+  grid-column: 12 / 14;
+  grid-row: 2;
+  width: 100%;
+}
+
+.conejo {
+  grid-column: 12 / 14;
+  grid-row: 3;
+  width: 100%;
+}
+
+.corazon{
+  grid-column: 7/11;
+  grid-row: 2;
+  width: 100%;
+}
+
+.cabratitle,
+.jabalititle,
+.serpientetitle,
+.conejotitle {
+  text-align: center;
+  font-weight: bold;
+}
+
+
